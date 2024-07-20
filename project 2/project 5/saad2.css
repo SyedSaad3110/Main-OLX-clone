@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto",sans-serif;
+}
+.nav_section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.2);
+    position: sticky;
+    background-color: white;
+    padding: 10px;
+}
+ .ion{
+    margin-top: 25px;
+    font-size: 30px;
+ }
+ .logo_contaner{
+    margin: 5px 0px;
+    font-size: medium;
+ }
+ .hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+ }
+ .hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+ }
+ .tag{
+    background-color: green;
+    color: beige;
+    padding: 5px 10px;
+    align-self: flex-start;
+ }
+ h1{
+    font-size: 72px;
+    letter-spacing: 0.9px;
+    font-weight: 200px;
+ }
+ .button1{
+    padding: 7px 10px;
+    margin-top: 60px;
+    border-radius: 7px;
+    background-color: orangered;
+    align-self: flex-start;
+    color: aliceblue;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0.9px;
+ }
+ .button1:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+    background-color: green;
+ }
+ .hero_img{
+    margin-top: 30px;
+   font-size: 70px;
+ }
+ .img{
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.9);
+ }
+ @media (max-width:786px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero_img{
+        display: flex;
+        justify-content: center;
+    }
+    .hero_img img{
+        width: 87%;
+    }
+    .hero_content{
+      gap: 20px;
+      padding: 10px;
+    }
+    .hero_content h1{
+        font-size: 32px;
+        box-shadow: 3px,4px,4px rgba(1,1,1,0.2);
+    }
+ }
+ .card img{
+    background-color: white;
+ }
+ .saad{
+    font-size: 20px;
+ }
+ h3{
+    margin: 6px;
+    font-size: 20px;
+ }
+ .card_content p{
+   margin-left: 4px;
+   padding: 5px;
+ }
+ .talha{
+   margin-top: 150px;
+   margin-bottom: 50px;
+   margin-left: 100px;
+   margin-right: 100px;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   box-shadow: 5px 5px 5px rgba(1,1,1,0.02);
+   transition: 0.2s ease-in-out;
+ }
+ .card{
+   display: flex;
+   /* margin: 0px 50px; */
+  gap: 10px;
+  
+ }
+ .card_content{
+   gap: 20px;
+ }
+ .card:hover{
+   box-shadow: 5px 5px 5px rgba(1,1,1,0.2);
+   transition: 0.2s ease-in-out;
+ }
+ .divider{
+   border: 1px solid #ccc;
+   margin: 20px 0;
+ }
+ .menu{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin: 50px 50px;
+   align-items: center;
+ }
+ .tag{
+   align-items: center;
+   
+ }
+ .menu .tag{
+   align-self: center;
+ }
+ .paragraph{
+   letter-spacing: 1.2px;
+   gap:0.9px;
+   text-align: center;
+   line-height: 30px;
+ }
+@media(max-width:786px){
+   .card{
+      display: flex;
+      flex-direction: column;
+   }
+}
+.end_sectiond{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   background-color: rgb(230, 191, 120);
+   padding: 60px;
+   position: sticky;
+}
+.icon_contaner{
+   display: flex;
+   gap: 20px;
+   color: black;
+   font-size: 20px;
+   
+}
+input{
+   font-size: 15px;
+   box-shadow: 4px 5px 5px rgba(1,1,1,0.2);
+}
+.link_list ul{
+   list-style: none;
+}
+.link_list h3{
+   margin-bottom: 10px;
+   color: gray;
+}
+.news_letter h3{
+   margin-bottom: 10px;
+   color: gray;
+}
+#face{
+color: rgb(78, 78, 221);
+}
+#twitter{
+   color: rgb(219, 128, 43);
+}
+#you{
+   color: red;
+}
+#insta{
+color: rgb(218, 89, 43);
+}
+.hero_img img{
+   width: 97%;
+   align-self: center;
+   margin-left: 20px;
+   margin-top: 10px;
+   display: flex;
+   /* justify-content: center; */
+}
+.hero_content{
+margin-top: 50px;
+}
+.main{
+   margin-top: 30px;
+}
+.news_letter input{
+   max-width: 140px;
+   max-height: fit-content;
+}
+.news_letter input::placeholder{
+   font-size: 14px;
+}
+
+
+
+@media(max-width:786px){
+   .end_sectiond{
+      display: flex;
+      flex-direction: column;
+   }
+}

@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+       font-size: 62.5%;
+       list-style: none;
+
+} 
+   :root{
+    --body-font:'Poppins', sans-serif;
+    --big-font:4rem;
+    --h1-font:3.6rem;
+    --h2-font:2.4rem;
+    --h3-font:2rem;
+    --h4-font:1.8rem;
+    --normal-font:1.6rem;
+    --small-font:1.4rem;
+    --smaller-font:1.3rem;
+
+   
+    --font-regular:400;
+    --font-medium:500;
+    --font-semi-bold:600;
+
+   
+    --primary-color:#C87E4F;
+    --primary-color-hover:#C2703d;
+    --text-color:#333;
+    --text-color-ligh:#888682;
+    --border-color:#484848;
+    --white-color:#fff;
+    --section-bg:#2c3034;
+
+ 
+    --z-overlay:10;
+    --z-fixed:100;
+
+    
+    --tran-0-2:0.2s;
+    --tran-0-3:0.3s;
+    --tran-0-5:0.5s;
+}
+body,
+button,
+input{
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+    font-weight: var(--font-regular);
+    color: var(--text-color);
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--white-color);
+    list-style: none;
+}
+
+.section{
+    padding: 7rem 2rem;
+}
+.contaner{
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+}
+.contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7rem;
+    width: 100%;
+    z-index: var(--z-fixed);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+nav{
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo,
+.contact-content i{
+    font-size: 2rem;
+}
+
+
+@media(max-width:990px){
+    :root{
+        --body-font:'Poppins', sans-serif;
+        --big-font:3.5rem;
+        --h1-font:2.4rem;
+        --h2-font:2rem;
+        --h3-font:1.8rem;
+        --h4-font:1.6rem;
+        --normal-font:1.5rem;
+        --small-font:1.3rem;
+        --smaller-font:1.2rem;
+}
+} 
