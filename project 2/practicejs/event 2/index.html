@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 2 chai or code</title>
+</head>
+<body style="background-color: black; color: #fff;">
+    <h1>chai or code</h1>
+    <button id="btn1">Stop</button>
+    <button id="btn2">Start</button>
+
+</body>
+<script>
+//  setInterval(function () {
+//     console.log("saad",Date.now());
+    
+//  },3000)
+// let changeText=function(){
+//     document.querySelector('h1').innerHTML="best javsascripts";
+// }
+// const change=setTimeout(changeText,2000)
+
+// document.querySelector('#btn1').addEventListener('click', function(){
+//     clearTimeout(change);
+//     console.log("stopped");
+    
+// })
+// const sayDate = function(str){
+//     console.log(str,Date.now())
+// }
+// const intervalId=setInterval(sayDate,1000,"hi");
+// clearInterval(intervalId)
+
+
+
+// generate a rendom color
+const rendomColor=function(){
+    const hex="0123456789ABCDEF"
+    let color = "#";
+    for(let i=0; i<6; i++){
+       color += hex[Math.floor((Math.random()*16))]
+    }
+    return color;
+};
+const startChangingColor=function(){
+   let intervalId = setInterval(changeBgColor,1000)
+   function changeBgColor(){
+    document.body.style.backgroundColor=rendomColor();
+     
+}
+   };
+   const stopChangingColor= function(){
+        clearInterval(intervalId)
+        intervalId=null
+    }
+   
+
+document.querySelector('#btn2').addEventListener('click', startChangingColor)
+document.querySelector('#btn1').addEventListener('click', stopChangingColor)
+
+</script>
+</html>

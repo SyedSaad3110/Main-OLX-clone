@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise js</title>
+</head>
+<body>
+    <script>
+            //  const promiseOne = new Promise(function(resolve, reject){
+            //      setTimeout(function(){
+            //         console.log("Async task is complete")
+            //         resolve()
+            //      },1000)
+            //  });
+            //  promiseOne.then(function(user){
+            //     console.log("saadurfsadi.com"); 
+            //  }) -->
+
+            //  promise 2
+            // const promiseTwo = new Promise(function(resolve, reject){
+            //      setTimeout(function(){
+            //         resolve({
+            //             username:"saad",
+            //             email:"saadurfsadi"
+            //         })
+            //      },1000)
+            //  });
+            //  promiseOne.then(function(user){
+            //     console.log(user); 
+            //  })
+
+            //  promise three
+            // const promiseThree=new Promise(function(resolve, reject){
+            //  let error = false;
+            //  if (!error){
+            //     resolve({username:"Iqra",email:"iqrasadiq.com"})
+            //  } else {
+            //     reject('error:something then wrong')
+            //  }    
+            // },1000);
+
+            // promiseThree.then(function(val){
+            //     console.log(val)
+            //     return val.username
+            // }).then(function(username){
+            //     console.log(username);
+            // }).catch(function(error){
+            //     console.log(error);
+            // }).finally(()=>{
+            //     console.log("the promise is either resolved or reject")
+            // });
+
+            // async 
+const promiseFive = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = true
+        if (!error) {
+            resolve({
+                username:"javascript", password:"123"
+            })
+        } else {
+            reject('error: js went wrong')
+        }
+    },1000)
+});
+
+async function consumedPromiseFive() {
+try {
+    const response = await promiseFive
+    console.log(response)
+} catch (error) {
+    console.log(error)
+}
+}
+consumedPromiseFive()
+        
+
+// fetch
+async function getAllUser() {
+ try {
+    let response =  await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   const data = response.json()
+console.log(response)
+//   console.log(data);
+ } catch (error) {
+    console.log("error:",error)
+ }
+    
+}
+getAllUser()
+    </script>
+</body>
+</html>
+
+
+<!-- fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json)) -->

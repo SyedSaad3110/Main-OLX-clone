@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+}
+#btn-box{
+    color: white;
+    gap: 3px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.btn-range{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    align-content: end;
+    justify-content: space-around;
+}

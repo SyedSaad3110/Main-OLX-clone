@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 all practice</title>
+</head>
+ <!-- <body  style="background-color: rgb(26, 24, 24); color: #fff;"> -->
+    <body>
+    <!-- <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div> -->
+    <!-- </div> -->
+    <!-- <ul class="lang">
+        <li>Javascript</li>
+    </ul> -->
+
+
+    <!-- <h1>chai or code</h1>
+    <button id="stop">stop</button> -->
+</body>
+<script>
+        //    const div = document.createElement('div');
+    //    console.log(div);
+    //    div.className="main";
+    //    div.id=Math.floor(Math.random()*10+1);
+    //    div.setAttribute('title','generate title');
+    // //    div.innerText="chai or code";
+    //    div.style.padding="12px";
+    //    div.style.color="orange";
+    //    div.style.background="green"
+    //    const addText = document.createTextNode("CHai or cake");
+    //    div.appendChild(addText);
+    //    document.body.appendChild(div)
+       
+
+    // 
+    //   function addLang(langName){
+    //     const li =  document.createElement('li')
+    //     li.innerText = `${langName}`
+    //     document.querySelector('.lang').appendChild(li);
+    //   }
+    //   addLang("python")
+    //   addLang("c++")
+
+    //   
+    // const secondLang = document.querySelector('li:nth-child(3)');
+    // secondLang.innerHTML ="mojo"
+
+    // // 
+    // const newLi = document.createElement('li')
+    // newLi.textContent = "java";
+    // secondLang.replaceWith(newLi)
+    // // 
+    // const lastLang = document.querySelector('li:last-child');
+    // lastLang.remove()
+    //  
+    
+
+    // 
+
+// setTimeout(() => {
+//     console.log("saad");
+    
+// },1000);
+
+// const saySaad = function(){
+//     console.log("saad urf sadi");
+    
+// }
+// setTimeout(saySaad, 2000)
+// let changeText = function(){
+//     document.querySelector('h1').innerHTML="best js"
+// }
+// let changeMe = setTimeout(changeText, 3000);
+// document.querySelector('#stop').addEventListener('click', function(){
+//     clearTimeout(changeMe);
+//     console.log("stop");
+// });
+ const promiseOne = new Promise(function(resolve, reject){
+        setTimeout(() => {
+            console.log("Async task is complete ");
+            resolve()
+        }, 1000);
+ });
+ promiseOne.then(function(){
+    console.log("promise consumed");
+ });
+
+//  
+const promiseThree = new Promise(function(resolve, reject){
+    setTimeout(() => {
+            console.log({username : "chai", email : "saadurfsadi"});
+            resolve()
+        }, 1000);
+});
+promiseThree.then(function(user){
+    console.log(user);
+    
+});
+
+const promiseFour = new Promise(function(resolve, reject){
+    setTimeout(() => {
+        let error = true;
+        if (!error) {
+            resolve({username:"iqra", password:"123"})
+        } else {
+            reject("error: something then wrong")
+        }
+        
+    }, 1000);
+})
+// promiseFour.then((user)=>{
+//     console.log(user);
+//     return user.username
+// }).then((username)=>{
+//     console.log(username);  
+// }).catch((error)=>{
+//     console.log(error);
+    
+// });
+
+// 
+
+async function promiseFour() {
+   try {
+    const response = await promiseFour;
+    console.log(response);
+    
+   } catch (error) {
+    console.log(error);
+    
+   }
+}
+promiseFour()
+
+
+
+</script>
+</html>
+        

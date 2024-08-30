@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event or javascript</title>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img  width="200px" id="photoshop" style="cursor: pointer;" src="https://images.unsplash.com/photo-1722641277067-a7fba0ad1a59?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </li>
+            <li>
+                <img  width="200px" id="owl" style="cursor: pointer;" src="https://images.unsplash.com/photo-1719937050814-72892488f741?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D">
+            </li>
+            <li>
+                <img  width="200px" id="iqra" style="cursor: pointer;" src="https://images.unsplash.com/photo-1722641277067-a7fba0ad1a59?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </li>
+            <li>
+                <img  width="200px" id="owl" style="cursor: pointer;" src="https://images.unsplash.com/photo-1719937050814-72892488f741?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D">
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.querySelector('#owl').addEventListener('click',function(e){
+        //   alert("owl is ready")
+        e.stopPropagation()
+        console.log("owl clicked")
+        e.target.parentNode.remove()
+      
+    }, false)
+
+    // document.querySelector('#owl').addEventListener('click',function(e){
+    //     //   alert("owl is ready")
+    //     e.stopPropagation()
+    //     console.log("owl clicked")
+      
+    // }, false)
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            let removeIt=e.target.parentNode;
+            removeIt.remove();
+        }
+        // e.stopPropagation()
+    })
+    
+
+
+</script>
+</html>

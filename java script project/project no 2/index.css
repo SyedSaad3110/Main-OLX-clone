@@ -1,0 +1,60 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+
+}
+.testimonial .img{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial .slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.slider p{
+padding: 0 160px;
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+color: #333;
+}
+.slider .quote-left{
+    font-size: 30px;
+    color: #4070f4;
+}
+.slider .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.details .job{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}

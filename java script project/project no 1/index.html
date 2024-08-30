@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <title>Project no 1</title>
+</head>
+<body>
+    <!-- header -->
+     <header class="contaner">
+     <nav class="nav">
+        <a href="#" class="nav-logo">CodingLab</a>
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#"class="nav-link">Home</a>
+                <a href="#"class="nav-link">Product</a>
+                <a href="#"class="nav-link">Service</a>
+                <a href="#"class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <div class="btn">
+            <button class="btn-1" id="form-open">Login</button>
+        </div>
+     </nav>
+     </header>
+
+     <!-- home -->
+      <section class="home">
+        <div class="form-container">
+            <i class="fa-solid fa-xmark form-close" ></i>
+        <!-- login form -->
+         <div class="form login-form">
+            <form action="#">
+                <h2>login</h2>
+                <div class="input-box">
+                    <input type="email" placeholder="Enter your email">
+                    <i class="fa-solid fa-envelope email"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Enter your password" class="password">
+                    <i class="fa-solid fa-key"></i>
+                    <!-- <i class="fa-solid fa-eye-slash"></i>-->
+                </div>
+
+                <div class="option-field">
+                    <span class="check-box">
+                      <input type="checkbox" id="check">
+                      <label for="check">Remember me</label>
+                    </span>
+                    <a href="#" class="forgot-pw">Forget</a>
+                </div>
+                <button class="btn-2" id="form-open">Login Now</button>
+                <div class="login-signup">
+                Don't have an account?<a href="#" id="signup">signup</a>
+                </div>
+            </form>
+         </div>
+         <!-- sign up form -->
+         <div class="form signup-form">
+            <form action="#">
+                <h2>signup</h2>
+                <div class="input-box">
+                    <input type="email" placeholder="Enter your email">
+                    <i class="fa-solid fa-envelope email"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Create password">
+                    <i class="fa-solid fa-key"></i>
+                    <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                </div> 
+
+                <div class="input-box">
+                    <input type="password" placeholder="Confirm password">
+                    <i class="fa-solid fa-key"></i>
+                    <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                </div>
+
+                <button class="btn-2" id="form-open">Login Now</button>
+                <div class="login-signup">
+                Already have an account?<a href="#" id="login">login</a>
+                </div>
+            </form>
+         </div>
+         </div>
+        </section>
+    <script src="index.js"></script>
+</body>
+</html>
