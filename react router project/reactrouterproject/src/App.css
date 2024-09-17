@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+  }
+  html::-webkit-scrollbar-track{
+    background: transparent;
+  }
+  html::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: 6rem;
+  }
+section{
+    max-width: 2200px;
+    padding: 10px 20px;
+    width: 100%;
+    min-height: 80px;
+}
+.logo h3{
+    font-size: 40px;
+    color: orange;
+    margin-top: 8px;;
+}
+.logo span{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+.nav a{
+    
+    margin-right: 30px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: all ease 0.5s;
+}
+.nav a:hover{
+ color: orange;
+ border-bottom: 2px solid orange;
+ transition: all ease 0.5s;
+
+}
+.icons{
+    color: #fff;
+    font-size: 28px;
+}
+.icons i{
+    
+    margin-right: 12px;
+}
+.icons i:hover{
+    color: orange;
+ transition: all ease 0.5s;
+}

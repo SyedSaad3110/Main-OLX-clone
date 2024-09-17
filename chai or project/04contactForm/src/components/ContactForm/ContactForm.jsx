@@ -32,10 +32,9 @@ function ContactForm() {
 
   return (
     <div>
-      <section className={styles.container}>
-        <div className={styles.contact_form}>
+      <div className={styles.contact_form}>
           <div className={styles.top_button}>
-          <Button text="VIA SUPPORT CHAT" icon={<MdMessage fontSize={24}/>}/>
+          <Button text="VIA SUPPORT " icon={<MdMessage fontSize={24}/>}/>
           <Button text="VIA CALL" icon={<MdCall fontSize={24} />}/>
           </div>
           <Button isOutLine={true} text="VIA EMAIL FORM" icon={< HiOutlineMail fontSize={24} />}/>
@@ -63,7 +62,8 @@ function ContactForm() {
           <div>{name + " " + email + " " + text}</div>
           
         </form>
-        </div>
+        </div><section className={styles.container}>
+        
 
         <div className={styles.contact_img}>
           <img src="/images/hero-img.jpg" alt="hero img"></img>
